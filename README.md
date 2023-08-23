@@ -19,7 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE:
-
+# LOAN_DATA:
 # LOAN_DATA_CSV:
 ```
 import pandas as pd
@@ -45,8 +45,6 @@ df.head()
 df.info()
 df.isnull().sum()
 ```
-# OUTPUT
-## LOAN_DATA:
 # DATA:
 ```
 import pandas as pd
