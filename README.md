@@ -45,31 +45,6 @@ df.head()
 df.info()
 df.isnull().sum()
 ```
-# DATA_SET.CSV:
-```
-import pandas as pd
-df=pd.read_csv("/Data_set.csv")
-print(df)
-df.head(10)
-df.info()
-df.isnull()
-df.isnull().sum()
-df['show_name']=df['show_name'].fillna(df['aired_on'].mode()[0])
-df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
-df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
-df.head()
-
-df['rating']=df['rating'].fillna(df['rating'].mean())
-df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
-df.head()
-
-df['watchers']=df['watchers'].fillna(df['watchers'].median())
-df.head()
-
-df.info()
-df.isnull()
-df.isnull().sum()
-```
 # OUTPUT
 ## LOAN_DATA:
 # DATA:
@@ -127,6 +102,31 @@ df.isnull().sum()
 ![sum](https://github.com/Yuvaranithulasingam/ODD2023-Datascience-Ex01/assets/121418522/3dd82ddd-f3b6-438c-af5c-b5faada58070)
 
 ## DATA_SET:
+# DATA_SET.CSV:
+```
+import pandas as pd
+df=pd.read_csv("/Data_set.csv")
+print(df)
+df.head(10)
+df.info()
+df.isnull()
+df.isnull().sum()
+df['show_name']=df['show_name'].fillna(df['aired_on'].mode()[0])
+df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
+df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
+df.head()
+
+df['rating']=df['rating'].fillna(df['rating'].mean())
+df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
+df.head()
+
+df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df.head()
+
+df.info()
+df.isnull()
+df.isnull().sum()
+```
 # DATA:
 ```
 import pandas as pd
