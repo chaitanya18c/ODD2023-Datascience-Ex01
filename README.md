@@ -71,7 +71,7 @@ df.isnull()
 df.isnull().sum()
 ```
 # OUTPUT
-## FOR LOAN_DATA:
+## LOAN_DATA:
 # DATA:
 ```
 import pandas as pd
@@ -126,7 +126,7 @@ df.isnull().sum()
 ```
 ![sum](https://github.com/Yuvaranithulasingam/ODD2023-Datascience-Ex01/assets/121418522/3dd82ddd-f3b6-438c-af5c-b5faada58070)
 
-## FOR DATA_SET:
+## DATA_SET:
 # DATA:
 ```
 import pandas as pd
